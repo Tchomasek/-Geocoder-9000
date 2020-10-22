@@ -1,0 +1,10 @@
+{%extends 'layout.html'%}
+{%block content%}
+<div class ="container">
+      <h2>Result</h2>
+
+      Distance from {{first | safe}} to {{second | safe}}: {{distance | safe}} {{units | safe}},<br>
+      Temp in {{first | safe}} is {{diff | safe}}°C {{hiLow | safe}} than in {{second | safe}}.
+      {{map | safe}}
+</div>
+{%endblock%}
