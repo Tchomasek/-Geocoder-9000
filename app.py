@@ -88,7 +88,7 @@ def success():
             data.distance/=0.09 # 1 footbal field = 90 meters
         data.distance=round(data.distance,1)
         data.diff=round(data.tempFromCoord(data.first_coord,data.second_coord),1) # temperature difference
-        #data.sendEmail(data.email,data.first,data.second,data.distance,data.units,data.diff)
+        data.sendEmail(data.email,data.first,data.second,data.distance,data.units,data.diff)
         if data.diff < 0:
             hiLow='lower'
         elif data.diff > 0:
